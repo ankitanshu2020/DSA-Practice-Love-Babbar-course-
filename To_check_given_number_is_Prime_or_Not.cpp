@@ -3,7 +3,6 @@ using namespace std;
 
 int manin()
 {
-    // enter a number and output will be prime or not
 
     int num, n = 2;
     cout << "Please enter value of num : ";
