@@ -1,18 +1,24 @@
+// To print pattern like this
+
+// A B C
+// A B C
+// A B C
+// for n = 3
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    int n, i = 1, count = 1;
+    int n, i = 1;
     cout << "Please enter the value of n : ";
     cin >> n;
     while (i <= n)
     {
-        int j = 1;
-        while (j <= i)
+        int j = 0;
+        while (j < n)
         {
-            cout << count << " ";
-            count++;
+            cout << (char)(65 + j) << " ";
             j++;
         }
         cout << endl;
