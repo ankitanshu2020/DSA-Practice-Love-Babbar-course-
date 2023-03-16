@@ -1,9 +1,8 @@
 // To print pattern like this
-//      1
-//     22
-//    333
-//   4444
-
+//       1
+//     1 2 1
+//   1 2 3 2 1
+// 1 2 3 4 3 2 1
 // for input = 4
 
 #include <bits/stdc++.h>
@@ -19,14 +18,21 @@ int main()
         int space = 1;
         while (space <= n - i)
         {
-            cout << " ";
+            cout << " "
+                 << " ";
             space++;
         }
         int j = 1;
         while (j <= i)
         {
-            cout << i;
+            cout << j << " ";
             j++;
+        }
+        j = i - 1;
+        while (j >= 1)
+        {
+            cout << j << " ";
+            j--;
         }
         cout << endl;
         i++;
