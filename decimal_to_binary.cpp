@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int n;
-    cout << "Please enter the value of n : ";
+    cout << "Please enter the value of n in Decimal : ";
     cin >> n;
 
     int ans = 0;
@@ -19,7 +19,7 @@ int main()
 
         i++;
     }
-    cout << "Answer is : " << ans << endl;
+    cout << "Answer in Binary is : " << ans << endl;
 
     return 0;
 }
